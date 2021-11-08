@@ -1,12 +1,13 @@
 package com.birdgelabz.datastructurelinkkedlist;
 
 public class Operations {
-	public static void addDataAtStart() {
+	public static LinkedList addDataAtStart() {
 		LinkedList linkedList = new LinkedList();
 		linkedList.push(70);
 		linkedList.push(30);
 		linkedList.push(56);
 		linkedList.print();
+		return linkedList;
 	}
 
 	public static void addDataAtEnd() {
@@ -28,5 +29,11 @@ public class Operations {
 		System.out.println("after:");
 		linkedList.print();
 
+	}
+
+	public static void deleteFirstNode() {
+		LinkedList linkedList = addDataAtStart();
+		linkedList.pop();
+		linkedList.print();
 	}
 }
